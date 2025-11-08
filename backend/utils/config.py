@@ -45,7 +45,15 @@ class Settings(BaseSettings):
     ANTHROPIC_API_KEY: str = ""
     OPENAI_API_KEY: str = ""
 
-    # Voice Services
+    # Voice Services (Primary: Deepgram)
+    DEEPGRAM_API_KEY: str = ""
+    PORCUPINE_ACCESS_KEY: str = ""
+    VOICE_MODEL_STT: str = "flux-general-en"
+    VOICE_MODEL_TTS: str = "aura-asteria-en"
+    WAKE_WORD: str = "hey dash"
+    VAD_ENABLED: bool = True
+
+    # Voice Services (Alternative/Legacy)
     ELEVENLABS_API_KEY: str = ""
     WHISPER_MODEL_SIZE: str = "base"
     WHISPER_DEVICE: str = "cpu"
